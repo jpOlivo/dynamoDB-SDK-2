@@ -1,0 +1,11 @@
+aws dynamodb create-table \
+--endpoint-url http://localhost:8000 \
+--profile localstack \
+--cli-input-json file://create-table-events.json
+
+
+aws dynamodb put-item \
+--endpoint-url http://localhost:8000 \
+--profile localstack \
+--table-name 'events' \
+--item file://add-item-table-events.json

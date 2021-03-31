@@ -1,0 +1,4 @@
+{
+    "id": {"S": "1"},
+    "body": {"S": "An simple event"}
+}
